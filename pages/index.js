@@ -3,6 +3,7 @@ import Head from 'next/head';
 import { MongoClient } from 'mongodb';
 
 import MeetupList from '../components/meetups/MeetupList';
+import Footer from '../components/layout/Footer';
 
 function HomePage(props) {
   return (
@@ -14,7 +15,8 @@ function HomePage(props) {
           content='Browse a huge list of highly active React meetups!'
         />
       </Head>
-      <MeetupList meetups={props.meetups} />;
+      <MeetupList meetups={props.meetups} />
+      {/* <Footer /> */}
     </Fragment>
   );
 }

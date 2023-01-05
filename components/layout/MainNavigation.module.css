@@ -1,3 +1,5 @@
+/** @format */
+
 .header {
   width: 100%;
   height: 5rem;
@@ -5,7 +7,7 @@
   align-items: center;
   justify-content: space-between;
   background-color: #77002e;
-  padding: 0 10%;
+  padding: 0 10px;
 }
 
 .logo {
@@ -36,4 +38,21 @@
 .header a:active,
 .header a.active {
   color: white;
+}
+
+@media screen and (max-width: 720px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+  }
+  .header ul {
+    list-style: outside;
+    color: whitesmoke;
+    flex-direction: column;
+    list-style: outside;
+  }
+  .header li {
+    margin-bottom: 0.5rem;
+    margin-left: 0;
+  }
 }

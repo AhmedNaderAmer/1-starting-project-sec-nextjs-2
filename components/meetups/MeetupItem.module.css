@@ -1,3 +1,5 @@
+/** @format */
+
 .item {
   margin: 1rem 0;
 }
@@ -43,4 +45,20 @@
 .actions button:hover,
 .actions button:active {
   background-color: #ffe2ed;
+}
+
+@media screen and (max-width: 720px) {
+  .image {
+    height: auto;
+  }
+  .content {
+    padding: 5px;
+  }
+  .content h3 {
+    margin: 0;
+    padding-bottom: 10px;
+  }
+  .actions {
+    padding: 0 0 10px 0;
+  }
 }
